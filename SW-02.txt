@@ -2,17 +2,17 @@ enable
 configure terminal
 hostname SW-02
 banner mtdo "ACESSO APENAS PARA PESSOAS  AUTORIZADAS"
-username mariaeduarda privilege 15 secret MARIA*user
-enable secret MARIA*enable
+username guilhermeferreira privilege 15 secret jabulani123
+enable secret jabulani
 line console 0
-password MARIA*console
+password jabulani
 login local
 exit
 ip domain-name 1rede.local
 crypto key generate rsa general-key modulus 1024
 line vty 0 15
 transport input ssh
-password MARIA*vty
+password jabulani
 login local
 exit
 service password-encryption
