@@ -3,10 +3,10 @@ enable
 configure terminal
 hostname RT-01
 banner mtdo "ACESSO APENAS PARA PESSOAS AUTORIZADAS"
-username juliocesar privilege 15 secret MARIA*user
-enable secret MARIA*enable
+username guilhermeferreira privilege 15 secret jabulani
+enable secret jabulani123
 line console 0
-password MARIA*console
+password jabulani
 login local
 exit
 ip domain-name 1rede.local
