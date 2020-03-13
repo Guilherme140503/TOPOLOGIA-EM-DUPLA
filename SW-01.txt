@@ -1,0 +1,24 @@
+enable
+configure terminal
+hostname SW-01
+banner mtdo "ACESSO APENAS PARA PESSOAS  AUTORIZADAS"
+username guilhermeferreira privilege 15 secret jabulani
+enable secret jabulani123
+line console 0
+password jabulani
+login local
+exit
+ip domain-name 1rede.local
+crypto key generate rsa general-key modulus 1024
+line vty 0 15
+transport input ssh
+password jabulani
+login local
+exit
+service password-encryption
+interface vlan 1
+ip address 192.168.0.254 255.255.255.0
+no shutdown
+ip default-gateway 192.168.0.1
+end
+wr
