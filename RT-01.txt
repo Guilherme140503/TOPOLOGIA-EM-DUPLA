@@ -2,7 +2,7 @@ RT-01
 enable
 configure terminal
 hostname RT-01
-banner mtdo "ACESSO APENAS PARA PESSOAS AUTORIZADAS"
+banner motd "ACESSO APENAS PARA PESSOAS AUTORIZADAS"
 username guilhermeferreira privilege 15 secret jabulani
 enable secret jabulani123
 line console 0
