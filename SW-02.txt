@@ -1,7 +1,7 @@
 enable
 configure terminal
 hostname SW-02
-banner mtdo "ACESSO APENAS PARA PESSOAS  AUTORIZADAS"
+banner motd "ACESSO APENAS PARA PESSOAS  AUTORIZADAS"
 username guilhermeferreira privilege 15 secret jabulani123
 enable secret jabulani
 line console 0
